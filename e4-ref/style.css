@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+/* Customize the colors */
+:root {
+  --col-01: #000000;
+  --col-02: #ffffff;
+  --col-03: #ff0000;
+  --col-04: #00ff00;
+  --col-05: #0000ff;
+  --col-06: #808080;
+}
+
+/* Update the dimensions and positioning of elements */
+.video-player-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#videoElement {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#videoPlayOverlay {
+  width: 8rem;
+  height: 8rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  opacity: 0.6;
+  display: none;
+}
+
+#muteButton {
+  background-image: url('./icons/mute.svg');
+}
+
+.muted {
+  background-image: url('./icons/unmute.svg') !important;
+}
+
+
+.video-controls-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-control-button {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.video-control-button:hover {
+  background-color: var(--col-05);
+}
+
+.video-control-button:active {
+  background-color: var(--col-06);
+}
+
+#playButton {
+  background-image: url('./icons/play.svg');
+}
+
+.video-progress-bar {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  height: 2rem;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: var(--col-01);
+  box-shadow: 0 1px 2px var(--col-02) inset;
+}
+
+::-moz-progress-bar {
+  background-color: var(--col-02);
+}
+
+::-webkit-progress-bar {
+  background-color: var(--col-01);
+  box-shadow: 0 1px 2px var(--col-02) inset;
+}
+
+::-webkit-progress-value {
+  background-color: var(--col-02);
+}
+
+.timeline-loading {
+  background-image: -moz-repeating-linear-gradient(
+    45deg,
+    var(--col-03) 0% 2%,
+    transparent 2% 4%,
+    red 4%
+  );
+  background-size: 200% 100%;
+  animation: loadingAnimation 4s linear infinite;
+}
+
+@keyframes loadingAnimation {
+  100% {
+    background-position: 50% 0%;
+  }
+}

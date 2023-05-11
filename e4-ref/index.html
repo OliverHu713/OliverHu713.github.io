@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+
+  </head>
+
+  <body>
+    <!-- I made a mute botton for the video because I think The addition of the mute/unmute toggle button enhances the overall usability of the media player by giving users control over the audio. 
+      This feature allows users to quickly mute or unmute the video without having to adjust the volume manually. It provides a convenient and accessible way to manage the audio experience, ensuring a more immersive and enjoyable viewing experience.-->   
+    <!--I've also adjusted the dimensions and positioning of various elements. Which I think that's looks much comfortable.-->
+    <!--By adding the background image to the muteButton, you are visually associating an icon (in this case, the mute.svg image) with the mute functionality.
+       This helps users quickly understand the purpose and action associated with the button.
+When the video is unmuted, the button displays the mute.svg image, indicating that clicking the button will mute the video.
+ On the other hand, when the video is already muted, the button toggles to display the unmute.svg image, providing a visual cue that clicking the button will unmute the video.-->
+
+
+ <!--By using different images for different states of the button, I create a visual affordance that guides users to interact with the button based on its current state. 
+  This improves the overall usability and user-friendliness of my media player interface.-->
+
+   
+    <div class="video-player-wrapper">
+      
+      
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+        
+
+      </div>
+     
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+        <button class="video-control-button" id="muteButton"></button>
+        <button class="video-control-button" id="muteButton"></button>
+
+
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
