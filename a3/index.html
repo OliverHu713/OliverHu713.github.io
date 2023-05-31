@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DAMN COKE!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div id="title" class="interactive-title">DAMN COKE!</div>
+    <div id="toggle-button-container">
+      <button id="toggle-button">Hide Description</button>
+    </div>
+    <img id="coke-image" src="Coke Image.png" alt="Coke Image">
+    <div id="description-column">
+      <p>
+        Welcome to the DAMN COKE! website, a captivating and visually stimulating experience that combines interactive design with an engaging storyline. In this description, we'll delve into the various aspects of the site, including the purpose behind the design choices and the challenges encountered along the way.
+      
+      At first glance, you'll notice the striking title "DAMN COKE!" emblazoned across the center of the page. This bold typography immediately grabs your attention, setting the tone for an immersive experience. The choice of font size and center alignment ensures that the title takes center stage, commanding your focus from the moment you land on the site.
+      
+      As an interactive designer, the goal was to create an engaging interface that would captivate users. The "DAMN COKE!" title serves as a clickable element, enticing users to explore further. When you hover over the title, it dynamically changes color to red, providing a subtle visual feedback and enhancing the interactive nature of the site.
+      
+      The main image featured on the site is a captivating picture of a Coke bottle, symbolizing the core theme of the experience. The image is carefully scaled and positioned to fit within the available space, ensuring that it maintains its aspect ratio and remains visually appealing on different screen sizes. By using a responsive design approach, the image seamlessly adapts to various devices, providing a consistent and engaging experience for all users.
+      
+      One of the challenges encountered during the design process was ensuring that the site's background seamlessly covered the entire page. The interactive designer had initially chosen a wallpaper image to create a visually appealing backdrop. However, due to the varying screen resolutions and aspect ratios, it was challenging to ensure the background covered the entire site.
+      
+      To address this issue, the designer made adjustments to the CSS code, specifically modifying the background-size property to 100% 100%. This change ensures that the background image scales proportionally to cover the entire viewport, creating a cohesive and immersive environment. Now, when you visit the site, the captivating wallpaper extends seamlessly from top to bottom, providing an enveloping experience.
+      
+      Additionally, the designer implemented a footer section to provide additional information and enhance the overall design cohesiveness. The footer features a light gray background and centered text, adding a touch of elegance and balance to the site's composition. It serves as a space to include important details, such as copyright information or links to relevant resources, ensuring a complete and professional presentation.
+      
+      To further enhance user interactivity and functionality, a "Hide Description" button was added to the left side of the page. This button allows users to toggle the display of the description column, providing a customizable viewing experience. The button is styled with a blue background color, creating a visually appealing contrast against the light gray background. This intentional choice not only adds aesthetic appeal but also encourages users to interact and engage with the site's content.
+      
+      In conclusion, the DAMN COKE! website offers an immersive and interactive design experience. The combination of captivating visuals, engaging interactions, and carefully considered design choices ensures that users are drawn into the storyline and compelled to explore further. Throughout the design process, the interactive designer encountered challenges such as adapting the background image to fit different screen sizes, but through careful adjustments and problem-solving, a cohesive and visually stunning site was achieved. So, go ahead and dive into the world of DAMN COKE!
+      </p>
+    </div>
+    <div id="window">
+      <span>You have tapped </span><span id="click-count">0</span> times of coke. Now you're feeling <span id="feeling">curious</span>.
+    </div>
+    <div id="volume-control">
+      <label for="volume-range">Volume:</label>
+      <input type="range" id="volume-range" min="0" max="1" step="0.1" value="0.5">
+    </div>
+  </div>
+  <footer>
+    <p>May 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

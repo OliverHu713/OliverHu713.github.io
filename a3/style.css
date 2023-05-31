@@ -1,0 +1,106 @@
+#title {
+  font-size: 48px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+
+.interactive-title {
+  cursor: pointer;
+}
+
+.interactive-title:hover {
+  color: red;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('wallll.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#coke-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#description-column {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 200px;
+  height: 400px;
+  background-color: rgb(235, 243, 8);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#description-column.hidden {
+  display: none;
+}
+
+#window {
+  background-color: rgb(226, 21, 21);
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#window span {
+  font-weight: bold;
+}
+
+#volume-control {
+  margin-top: 20px;
+}
+
+#volume-control label {
+  display: inline-block;
+  width: 60px;
+}
+
+#volume-control input[type="range"] {
+  width: 150px;
+}
+
+#coke-image.scale-effect {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer {
+  background-color: rgb(153, 1, 1);
+  padding: 20px;
+  text-align: center;
+}
+
+#toggle-button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#toggle-button {
+  background-color: rgb(222, 9, 222);
+  color: rgb(108, 16, 66);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
